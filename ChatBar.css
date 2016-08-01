@@ -1,0 +1,22 @@
+.chatbar{
+	display:flex;
+	flex:0 0 45px;
+	background:white;
+}
+.chatbar input{
+	flex:1 0;
+	padding:10px;
+	color:#0c9;
+}
+.chatbar input::-webkit-input-placeholder { 
+  color: #00b386;
+}
+.chatbar input::-moz-placeholder {
+  color: #00b386;
+}
+.chatbar .icon{
+	flex:0 0 50px;
+	fill:none;
+	stroke:#0c9;
+	padding:10px;
+}
