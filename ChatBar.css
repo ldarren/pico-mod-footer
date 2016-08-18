@@ -20,3 +20,6 @@
 	stroke:#0c9;
 	padding:10px;
 }
+.charbar .icon.disabled{
+	stroke:red;
+}

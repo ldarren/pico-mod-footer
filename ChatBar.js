@@ -11,12 +11,25 @@ return {
 	},
     events: {
 		'click svg':function(e){
-			var input=this.el.querySelector('input')
-			if (!input.value) return
-			this.sendMsg(input.value)
-			input.value=''
+			var
+			el=this.el,
+			input=el.querySelector('input'),
+			svg=el.querySelector('svg')
+
+			if (input.disabled || !input.value) return
+
+			input.disabled=true
+			svg.classList.add('disabled')
+
+			this.sendMsg(input.value, function(err){
+				input.disabled=false
+				svg.classList.remove('disabled')
+				if (err) return __.dialogs.alert(err,'Server error')
+				input.value=''
+			})
         }
     },
-	sendMsg:function(msg){
+	sendMsg:function(msg, cb){
+		cb()
 	}
 }
