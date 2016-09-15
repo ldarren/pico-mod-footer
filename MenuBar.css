@@ -1,10 +1,10 @@
-.__ ul#footer{
+#__ ul#footer{
   position:relative;
   flex-shrink:0;
   display:flex;
   justify-content:space-around;
 }
-.__ ul#footer li{
+#__ ul#footer li{
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -15,18 +15,18 @@
   margin:5px;
   width:100%;
 }
-.__ ul#footer li.selected{
+#__ ul#footer li.selected{
 	color:#007aff;
 }
-.__ ul#footer li.selected use{
+#__ ul#footer li.selected use{
 	fill:#007aff;
 }
-.__ ul#footer li .icon {
+#__ ul#footer li .icon {
 	width: 2rem;
 	height: 2rem;
 	stroke-width: 0;
 	fill: currentColor;
 }
-.__ ul#footer li .icon use{
+#__ ul#footer li .icon use{
   stroke-width: 2px;
 }

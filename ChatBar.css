@@ -1,21 +1,21 @@
-.__ .chatbar{
+#__ .chatbar{
 	display:flex;
 	/* TODO: flex-basis not working on firefox */
 	flex:0 0 45px;
 	background:white;
 }
-.__ .chatbar input{
+#__ .chatbar input{
 	flex:1 0;
 	padding:10px;
 	color:#0c9;
 }
-.__ .chatbar input::-webkit-input-placeholder { 
+#__ .chatbar input::-webkit-input-placeholder { 
   color: #00b386;
 }
-.__ .chatbar input::-moz-placeholder {
+#__ .chatbar input::-moz-placeholder {
   color: #00b386;
 }
-.__ .chatbar .icon{
+#__ .chatbar .icon{
 /* safari bug, svg required position to be absolute to be clickable */
 	flex:0 0 45px;
 	height:45px;
@@ -23,6 +23,6 @@
 	stroke:#0c9;
 	padding:10px;
 }
-.__ .charbar .icon.disabled{
+#__ .charbar .icon.disabled{
 	stroke:red;
 }
