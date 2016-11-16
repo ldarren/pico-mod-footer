@@ -10,11 +10,10 @@ return {
         this.el.innerHTML=deps.tpl(deps.list)
     },
 	slots:{
-		pageAdd:function(from,sender){
-			var arr=sender.name.split('.')
-			if (!arr || arr.length < 2) return
+		pageAdd:function(from,sender,paneId,page,isBack){
+			if (this.deps.paneId!==paneId) return
 			var
-			id=arr[1],
+			id=sender.name,
 			ul=this.el.querySelectorAll('li'),
 			hide=true
 			for(var i=0,li; li=ul[i]; i++){
