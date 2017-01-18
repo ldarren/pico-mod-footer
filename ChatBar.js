@@ -1,6 +1,5 @@
 return {
     deps:{
-        paneId:'int',
 		tpl:'file',	
 		icon:'text'
     },
